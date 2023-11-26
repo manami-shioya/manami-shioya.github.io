@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="塩谷愛海のポートフォリオサイトです。">
+	<link href="https://unpkg.com/destyle.css@1.0.5/destyle.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet" media="screen and (max-width:700px)">
+	<link href="images/favicon.png" rel="icon">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Satisfy&family=Train+One&display=swap');
+	</style>
+	<script src="https://kit.fontawesome.com/023c1a8ddd.js" crossorigin="anonymous"></script>
+	<script src="js/script.js" defer></script>
+	<title>Manami Shioya / Portfolio</title>
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- ローディングアニメーション -->
+		<div id="loading">
+			<p>Loading...</p>
+			<div id="loading-screen"></div>
+		</div>
+	
+		<!-- ヘッダー -->
+		<header>
+			<div id="header_title">
+				<h1>Manami Shioya<br>Portfolio</h1>
+				<p>Welcome to my page!</p>
+			</div>
+		</header>
+		<!-- ヘッダー終了 -->
+		
+		<!-- ナビゲーション -->
+		<nav>
+			<ul>
+				<li><a href="#">
+					<span class="nav_nomal">TOP</span>
+					<span class="nav_hover">トップ</span></a></li>
+				<li><a href="#about">
+					<span class="nav_nomal">ABOUT</span>
+					<span class="nav_hover">自己紹介</span></a></li>
+				<li><a href="#works">
+					<span class="nav_nomal">WORKS</span>
+					<span class="nav_hover">作品</span></a></li>
+				<li><a href="#contact">
+					<span class="nav_nomal">CONTACT</span>
+					<span class="nav_hover">お問い合わせ</span></a></li>
+			</ul>
+		</nav>
+		<!-- ナビゲーション終了 -->
+		
+		<!-- メイン -->
+		<main>
+		
+			<!-- メイン【about】-->
+			<article>
+				<h2 class="index">ABOUT</h2>
+				<div class="contents" id="about">
+
+					<!--【about】上エリア左 -->
+					<div id="about_top_left">
+						<h3><ruby>塩谷<rt>しおや</rt></ruby>&nbsp;<ruby>愛海<rt>まなみ</rt></ruby></h3>
+						<img src="images/profile_img.jpg" alt="プロフィール写真">
+					</div>
+					
+					<!--【about】上エリア右 -->
+					<div id="about_top_right">
+						<p class="profile_text">大学卒業後、人材派遣会社に務めていましたが、
+							以前から興味があったWeb業界へチャレンジしたいと思い、キャリアチェンジを決意しました。</p>
+						<p class="profile_text">現在、求職者支援訓練のWebプログラミング科において
+							Webデザインとプログラミングを勉強中です。</p>
+						<p class="profile_text">UI/UXデザイン・プログラミング・マーケティングといった
+							複数の視点からWebサイトを構築・提案できる人材を目指しています。</p>
+						
+						<div class="box">
+							<span class="box-title">略歴</span>
+							<p>2016/4&nbsp;-&nbsp;2020/3 &nbsp; | &nbsp; 熊本大学文学部文学科</p>
+							<p>比較文学コースにて東アジア・欧米圏を中心に、世界の文学作品の比較研究について学ぶ</p>
+							<p>2020/4&nbsp;-&nbsp;2023/4 &nbsp; | &nbsp; 株式会社アウトソーシング</p>
+							<p>製造業向けの人材派遣会社にて、派遣従業員の労務管理・営業・募集採用等の業務に従事<br>
+								京都・滋賀エリアにて、約10社の取引先と約50名の派遣従業員を担当</p>
+							<p>2023/7&nbsp;-&nbsp;2023/11 &nbsp; | &nbsp; 求職者支援訓練 Webプログラミング科</p>
+							<p>HTML・CSS、JavaScript、PHP、データベース、Photoshop等を習得中</p>
+							</div>
+						
+						<div class="box">
+							<span class="box-title">趣味</span>
+							<ul>
+								<li>ソロツーリング</li>
+								<li>美術館巡り</li>
+								<li>セルフネイル</li>
+							</ul>
+						</div>
+						
+						<div class="box">
+							<span class="box-title">特技</span>
+							<ul>
+								<li>手芸（細かい作業全般！）</li>
+								<li>見えないところでも努力すること</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--【about】下エリア -->
+					<div id="about_bottom">
+						<h4 class="skill_subtitle">PCスキル</h4>
+						<ul id="pc_skill">
+							<li><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3"></i></li>
+							<li><span class="bold">HTML・CSS</span>
+								<br>レスポンシブデザインの記述が可能です。
+								<br>エディタは現在Visual Studio Codeを使用。訓練校ではサクラエディタを使用していました。</li>
+							<li><i class="fa-brands fa-square-js"></i></li>
+							<li><span class="bold">JavaScript</span>
+								<br>スライドショー、ポップアップウィンドウといった簡単なアニメーションの記述が可能です。</li>
+							<li><i class="fa-brands fa-php"></i></li>
+							<li><span class="bold">PHP</span>
+								<br>問い合わせフォームの実装が可能です。
+								<br>11月にPHP技術者認定試験を受験予定です。</li>
+							<li><i class="fa-regular fa-image"></i></li>
+							<li><span class="bold">Photoshop</span>
+								<br>基本的な機能は問題なく使用できます。</li>
+							<li><i class="fa-brands fa-figma"></i></li>
+							<li><span class="bold">Figma</span>
+								<br>ワイヤーフレーム・カンプ制作時に使用しています。
+								<br>独学で勉強中です。</li>
+						</ul>
+
+						<h4 class="skill_subtitle">資格</h4>
+						<ul id="sikaku">
+							<li>Webクリエイター能力認定試験エキスパート</li>
+						</ul>
+					</div>
+
+				</div>
+			</article>
+			<!-- メイン about 終了 -->
+			
+			<!-- メイン works -->
+			<article>
+				<h2 class="index">WORKS</h2>
+				<div  class="contents" id="works">
+
+					<!--【works】ウェブサイトエリア -->
+					<section>
+						<h3 class="works_subtitle">Web Site</h3>
+						<p>画像クリックで詳細ページに移動します</p>
+						<div class="works_thumbnail">
+							<a href="website02.html"><img src="images/website02.jpg" alt="ウェブサイトのサムネイル画像">
+								<p>空想こどもデンタルクリニック（架空のコーポレートサイト）</p></a>
+							<a href="website01.html"><img src="images/website01.jpg" alt="ウェブサイトのサムネイル画像">
+								<p>雁乃酒造（架空のブランドサイト）</p></a>
+							<a href="website.html"><img src="images/website.jpg" alt="ウェブサイトのサムネイル画像">
+								<p>ポートフォリオサイト</p></a>
+						</div>
+					</section>
+
+					<!-- 【works】バナーエリア -->
+					<!-- <section>
+						<h3 class="works_subtitle">Banner</h3>
+						<p>クリックで詳細ページに移動します</p>
+						<div class="works_thumbnail">
+							<a href="#"><img src="images/sample_img.png" alt="バナーのサムネイル画像"></a>
+							<a href="#"><img src="images/sample_img.png" alt="バナーのサムネイル画像"></a>
+						</div>
+						<div class="works_thumbnail">
+							<a href="#"><img src="images/sample_img.png" alt="バナーのサムネイル画像"></a>
+							<a href="#"><img src="images/sample_img.png" alt="バナーのサムネイル画像"></a>
+						</div>
+					</section> -->
+
+				</div>
+			</article>
+			<!-- メイン【works】終了 -->
+			
+			<!-- メイン【contact】-->
+			<article>
+				<h2 class="index">CONTACT</h2>
+				<div  class="contents" id="contact">
+					<p>ご連絡はメールにてお願い致します。</p>
+					<div id="mail_container">
+						<p><a href="mailto:manami.shioya&#64;gmail.com">
+							<i class="fa-regular fa-envelope" id="envelope"></i></a></p>
+						<p id="blink"><i class="fa-regular fa-hand-point-up"></i>Click!</p>
+					</div>
+							<p>manami.shioya<i class="fa-solid fa-at"></i>gmail.com</p>
+							
+				</div>
+			</article>
+			<!-- メイン【contact】終了 -->
+		
+		</main>
+		<!-- メイン終了 -->
+		
+		<!-- フッター -->
+		<footer>
+			<p><small>&copy; 2023 &nbsp; Manami Shioya &nbsp; All Rights Reserved.</small></p>
+		</footer>
+		<!-- フッター終了 -->
+		
+	</div>
+</body>
+
+</html>

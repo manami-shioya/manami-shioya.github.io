@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*==================================
+		全体
+==================================*/
+#wrap, #wrap_sub{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*==================================
+		ローディングアニメーション
+==================================*/
+#loading p{
+	font-size: 1.2rem;
+}
+
+/*==================================
+		ヘッダー
+==================================*/
+header{
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+
+}
+#header_title{
+	grid-column: 2/4;
+	height: 30%;
+}
+header h1{
+	font-size:1.7rem;
+}
+header p{
+	font-size:0.7rem;
+}
+
+/*==================================
+		ナビゲーション
+==================================*/
+nav ul{
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0;
+    font-size: 0.8rem;
+}
+nav ul li:nth-child(1){
+	grid-column: 1/2;
+}
+nav ul li:nth-child(2){
+	grid-column: 2/3;
+}
+nav ul li:nth-child(3){
+	grid-column: 3/4;
+}
+nav ul li:nth-child(4){
+	grid-column: 4/5;
+}
+
+/*==================================
+		メイン
+==================================*/
+
+main{
+    margin: o auto;
+    padding: 5%;
+}
+article{
+	display:block;
+}
+/* メイン コンテンツ =======================*/
+.index{
+	font-size:4rem;
+    margin: 5rem auto;
+}
+
+/* ABOUT =======================*/
+#about{
+	display: block;
+}
+h3{
+	font-size: 1.3rem;
+}
+#about_top_left{
+    text-align: center;
+}
+#about_top_left img{
+	width:60%;
+    margin: 1rem auto;
+}
+ul#pc_skill, ul#explain, .container_sub ul{
+	display: block;
+}
+ul#pc_skill li, ul#explain{
+	margin-bottom:2rem;
+    padding: 0 3%;
+}
+ul#pc_skill li:nth-child(odd){
+	text-align: left;
+	margin: 0.2rem 0.8rem;
+}
+ul#sikaku li{
+	padding-left:0;
+}
+
+/* WORKS =======================*/
+.works_subtitle{
+    margin: 0;
+}
+.works_thumbnail{
+	display:block;
+	margin-bottom: auto;
+}
+.works_thumbnail img{
+    margin: 1rem;
+}
+
+/*==================================
+		サブページ
+==================================*/
+/*==================================
+		サブページヘッダー
+==================================*/
+#wrap_sub #header_title{
+	grid-column:2/4;
+	height: 70px;
+}
+
+/*==================================
+		サブページメイン
+==================================*/
+#breadcrumb{
+    font-size: 0.6rem;
+	margin-bottom: 1.5rem;
+}
+h4.sub{
+	margin-top: 2rem;
+}
+ul#explain, ul#plan{
+	margin: 0 5%;
+}
+ul#explain li:nth-child(odd){
+	text-align: left;
+}
+ul#explain li:nth-child(even){
+	padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+ul#plan{
+	margin-left: 2rem;
+}
+ul#plan li{
+	margin-bottom: 1rem;
+}

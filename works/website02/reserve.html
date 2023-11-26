@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/destyle.css@1.0.5/destyle.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet" media="screen and (min-width:1000px)">
+    <link href="images/icon.png" rel="icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/023c1a8ddd.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>    
+    <script src="js/jquery.bgswitcher.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <title>予約ページ／空想こどもデンタルクリニック</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- 背景色指定 -->
+        <div class="back_color">
+
+            <header>
+
+                <!-- レスポンシブ　左側 -->
+                <div class="responsive_left">
+                    <div class="icon">
+                        <img src="images/icon.png" alt="アイコン画像">
+                        <h1>空想こども<br>デンタルクリニック</h1>
+                    </div>
+                </div>
+
+                <div class="icon icon_center">
+                    <a href="index02.html">
+                        <img src="images/icon.png" alt="アイコン画像">
+                        <h1>空想こども<br>デンタルクリニック</h1>
+                    </a>
+                </div>
+                
+                <!-- ハンバーガーアイコン -->
+                <div class="humburger">
+                    <i class="fa-solid fa-bars open-menu"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li class="nav_li"><a href="index02.html#time">診療時間</a></li>
+                        <li class="nav_li"><a href="index02.html#news">お知らせ</a></li>
+                        <li class="nav_li"><a href="index02.html#message">院長メッセージ</a></li>
+                        <li class="nav_li"><a href="index02.html#examine">診察内容</a></li>
+                        <li class="nav_li"><a href="index02.html#facility">設備</a></li>
+                        <li class="nav_li"><a href="index02.html#access">アクセス</a></li>
+                        <li class="nav_li"><a href="#reserve.html">ご予約はこちら</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+                
+            <main>
+                
+                <!-- 予約ページ -->
+                <article id="reserve">
+                    <div class="index">
+                        <img src="images/index_top.png" alt="見出し画像">
+                        <h2>予約ページ</h2>
+                    </div>
+
+                    <form>
+                        <p>
+                            <label><span class="required_lavel">必須</span>
+                            <span class="form_title">お名前</span><br>
+                            <input type="text" name="name" required></label>
+                        </p>
+                        <p>
+                            <label><span class="required_lavel">必須</span>
+                            <span class="form_title">生年月日</span><br>
+                            <input type="date" name="birth" required></label>
+                        </p>
+                        <p>
+                            <label><span class="form_title">診察券番号</span>（診察カードをお持ちの方）<br>
+                            <input type="text" name="id"></label>
+                        </p>
+                        <p>
+                            <label><span class="required_lavel">必須</span>
+                            <span class="form_title">予約日</span><br>
+                            <input type="date" name="day"></label>
+                        </p>
+                        <p>
+                            <label><span class="required_lavel">必須</span>
+                            <span class="form_title">予約時間</span><br>
+                            <select name="time">
+                                <option value="" disabled selected>時間を選択</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                            </select></label>
+                        </p>
+                        <p>
+                            <span class="required_lavel">必須</span>
+                            <span class="form_title">診察内容</span><br>
+                            <label class="radio_box"><input type="radio" name="examine" value="1">こども歯科</label>
+                            <label class="radio_box"><input type="radio" name="examine" value="2">一般歯科</label>
+                            <label class="radio_box"><input type="radio" name="examine" value="3">こども矯正</label>
+                            <label class="radio_box"><input type="radio" name="examine" value="4">はみがき指導</label>
+                            <label class="radio_box"><input type="radio" name="examine" value="5">その他</label>
+                        </p>
+                        <div class="btn_box">
+                            <input type="submit" value="送信">
+                            <input type="reset" value="クリア">
+                        </div>
+                    </form>
+                    
+                </article>
+
+            </main>
+
+            <footer>
+                <div class="background3">
+                    <div class="background3_inner">
+                        <h4>サイトマップ</h4>
+                        <ul>
+                            <div class="box2">
+                                <li><a href="index02.html">トップ</a></li>
+                                <li><a href="index02.html#time">診療時間</a></li>
+                                <li><a href="index02.html#news">お知らせ</a></li>
+                                <li><a href="index02.html#message">院長メッセージ</a></li>
+                            </div>
+                            <div class="box2">
+                                <li><a href="index02.html#examine">診察内容</a></li>
+                                <li><a href="index02.html#facility">設備について</a></li>
+                                <li><a href="index02.html#access">アクセス</a></li>
+                                <li><a href="reserve.html">予約ページ</a></li>
+                            </div>
+                        </ul>
+
+                        <div class="container">
+                            <div class="icon">
+                                <img src="images/icon.png" alt="アイコン画像">
+                                <p class="large">空想こども<br>デンタルクリニック</p>
+                            </div>
+                            <h5><i class="fa-solid fa-location-dot"></i>住所</h5>
+                            <p>〒000-0000<br>●●県●●市なんとかかんとか1-1</p>
+                            <h5><i class="fa-solid fa-phone"></i>TEL</h5>
+                            <p>0000-00-0000</p>
+                        </div>
+
+                        <p class="copyright"><small>&copy; 空想こどもデンタルクリニック&copy;All Rights Reserved.</small></p>
+                    </div>
+                </div>
+            </footer>
+
+        <!-- 背景色指定終了     -->
+        </div>
+    </div>
+</body>
+</html>

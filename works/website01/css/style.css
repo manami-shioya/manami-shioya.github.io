@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+/*==================================
+		カスタムプロパティ
+==================================*/
+:root{
+	--main_color:#5D0000;
+	--base_color:#171915;
+    --accent_color:#9D7C6B;
+    --font_color:#EDECE3;
+}
+
+/*==================================
+		全体
+==================================*/
+body{
+	background-color: var(--base_color);
+	color:var(--font_color);
+	font-family:"游明朝",Meiryo,serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.vertical{
+    writing-mode: vertical-rl;
+}
+
+/*==================================
+		ヘッダー
+==================================*/
+header{
+	height:3rem;
+    background-color: #5d0000;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+h1{
+    font-size: 1.5rem;
+    margin: 0.6rem;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    margin: 0.2rem 1rem;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+}
+nav ul li:hover{
+    border-bottom: var(--font_color) 1px solid;
+}
+
+/*==================================
+		メイン
+==================================*/
+article{
+    margin-bottom: 10rem;
+}
+/* top =======================*/
+#top{
+    position: relative;
+}
+.container0{
+    display: flex;
+    justify-content: center;
+}
+#top img{
+    width: 50%;
+}
+h3{
+    font-size: 1.8rem;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* about =======================*/
+
+/* copy =======================*/
+.container1{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+}
+.container1:nth-child(2){
+    flex-direction: row-reverse;
+}
+.copy img{
+    width: 60%;
+}
+.copy p{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin: 0 auto;
+}
+
+/* situation =======================*/
+.situation{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    margin-top: 10rem;
+}
+.container2{
+    border: var(--font_color) 1px solid;
+    width: 30%;
+}
+.container2 img{
+    width: 100%;
+}
+.container2 p{
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+/* list =======================*/
+#list{
+    overflow: hidden;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 3rem auto;
+    border-bottom: var(--font_color) 1px solid;
+    padding-bottom: 0.5rem;
+    width: 22rem;
+}
+.slider {
+    width:50%;
+    margin:0 auto;
+}
+.slider img {
+    width:200px;
+    height:auto;
+    float: left;
+}
+.slider .slick-slide {
+	transform: scale(0.8);
+	transition: all .5s;
+	opacity: 0.5;
+}
+.slider .slick-slide.slick-center{
+	transform: scale(1);
+	opacity: 1;
+}
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    height: 15px;
+    width: 15px;
+}
+.slick-prev {
+    left: -5.5%;
+    transform: rotate(-135deg);
+}
+.slick-next {
+    right: -5.5%;
+    transform: rotate(45deg);
+}
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;
+    height:8px;
+    display:block;
+    border-radius:50%;
+    background:#ccc;
+}
+.slick-dots .slick-active button{
+    background:#333;
+}
+.slider p{
+    width: 70px;
+    line-height: 70px;
+    background-color:var(--main_color);
+    text-indent: 2rem;
+    font-size: 1.5rem;
+    float: right;
+    height: 300px;
+}
+.right{
+	position: relative;
+	border-bottom: 1px solid var(--font_color);
+	width: 18rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    float: right;
+    margin-right: 5rem;
+    transition: 0.4s;  
+}
+.right::before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 1px;
+	background: var(--font_color);
+	rotate: 40deg;
+	position: absolute;
+	right: -3px;
+	bottom: 9px;
+}
+.right:hover{
+    font-size: 1.1rem;
+    padding-bottom: 0.4rem;
+}
+
+/* accsess =======================*/
+.contents2{
+    display: flex;
+    justify-content: center;   
+    margin: 0 5rem;
+}
+.contents2 img{
+    width: 50%;
+}
+.container4{
+    margin: auto;
+}
+h4{
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+.container4 ul{
+    margin-left: 1rem;
+}
+.container4 ul li:nth-child(3){
+    margin:0.8rem 0;
+}
+
+/*==================================
+		フッター
+==================================*/
+footer{
+    background-color: var(--main_color);
+    padding: 1rem;
+}
+footer p{
+    text-align: center;
+    margin-top: 0.8rem;
+}
+.contents3{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.contents3 h4{
+    margin: 0 1.2rem;
+}
+.button{
+    font-size: 1.8rem;
+    width: 2.4rem;
+    height: 2.2rem;
+    text-align: center;
+    line-height: 2.3rem;
+    border-radius: 20%/20%;
+    margin: 0 0.5rem;
+    transition: 0.2s;
+}
+.button:hover{
+    background-color: var(--font_color);
+    color: var(--main_color);
+}
+
+
+

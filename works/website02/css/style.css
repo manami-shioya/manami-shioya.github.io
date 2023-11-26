@@ -1,0 +1,639 @@
+@charset "UTF-8";
+
+/*==================================
+		カスタムプロパティ
+==================================*/
+:root{
+    --main_color:#FE7777;
+	--base_color:#F5D5B3;
+    --accent_color:#;
+    --font_color:#333333;
+
+}
+
+/*==================================
+		全体
+==================================*/
+body{
+    background-color: var(--base_color);
+    background-image: url(../images/background_img.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+	color:var(--font_color);
+	font-family:'M PLUS Rounded 1c', Meiryo, sans-serif;
+}
+#wrapper{
+    max-width: 450px;
+    margin: 0 auto;
+}
+.back_color{
+    background-color: var(--base_color);
+}
+
+/*==================================
+		ファーストビュースライダー
+==================================*/
+.firstview{
+    height: 100vh;
+    background-size:cover;
+	background-position:center;
+}
+
+/*==================================
+		ヘッダー
+==================================*/
+header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.icon{
+    margin: auto 0 0 5%;
+    display: flex;
+    justify-content: left;
+    z-index: 998;
+}
+.icon img{
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: auto 0.3rem 0.2rem 0;
+}
+.icon_center{
+    display: block;
+}
+.icon_center a{
+    display: flex;
+}
+h1{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 
+        1px 1px 0 var(--main_color), 
+        -1px 1px 0 var(--main_color), 
+        -1px -1px 0 var(--main_color), 
+        1px -1px 0 var(--main_color);
+}
+.responsive_left{
+    display: none;
+}
+
+/* スライドメニュー =======================*/
+.humburger{
+    position: relative;
+}
+.humburger i{
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    z-index: 1001;
+    opacity: 0;
+    font-size: 2rem;
+    color: #FFF;
+    text-shadow:0 0 1rem var(--main_color);
+}
+header nav{
+    background-color: var(--base_color);
+    width: 0;   /* ←80%から 0 に変更 */
+    height: 100vh;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 6rem;
+    transition: .5s;
+    overflow-x: hidden;
+}
+header li{
+    line-height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+header li:hover{
+    color: var(--main_color);
+}
+
+/* メニューを開いた時 */
+nav.open-menu {
+    width: 80%;
+}
+i.close-menu, i.open-menu{
+    opacity: 1;
+}
+ 
+/*==================================
+		メイン全体
+==================================*/
+
+/* ページトップ遷移ボタン =======================*/
+.top_button{
+    height: 5rem;
+    width: 5rem;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 12%;
+    right: 3%;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    z-index: 999;
+}
+.top_button:hover{
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+}
+.top_button p{
+    line-height: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.top_button a{
+    display: inline-block;
+    width: 5rem;
+}
+
+/* article =======================*/
+article{
+    padding: 1rem;
+}
+
+/* 見出し =======================*/
+.index{
+    text-align: center;
+    padding: 1rem 0;
+}
+.index img{
+    width: 4rem;
+    margin-bottom: 0.3rem;
+}
+.index h2{
+    font-size: 1.5rem;
+}
+
+
+/*==================================
+		メイン
+==================================*/
+
+/* トップ =======================*/
+#top{
+    position: relative;
+    height:90vh;
+}
+h3{
+    text-align: left;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    line-height: 2.5rem;
+    color: #FFF;
+    text-shadow:0 0 1rem var(--main_color);
+    font-size: 1.1rem;
+}
+
+/* 予約ボタン =======================*/
+.reserve_button{
+    height: 3.5rem;
+    width: 15rem;
+    background-color: var(--main_color);
+    color: #FFF;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+.reserve_button:hover{
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+}
+.reserve_button p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+}
+.reserve_button a{
+    display: inline-block;
+    width: 15rem;
+}
+
+
+/* 診察時間 =======================*/
+#time table{
+    background-color: #FFF;
+    width: 90%;
+    margin: 0 auto;
+    border-left: 0.8rem solid #FFF;
+    border-right: 0.8rem solid #FFF;
+    font-size: 0.9rem;
+}
+#time th, #time td{
+    text-align: center;
+    vertical-align: middle;
+    width: 12%;
+}
+#time thead th{
+    height: 2rem;
+    border-bottom: 1px solid var(--font_color);
+    vertical-align: bottom;
+    padding-bottom: 0.4rem;
+}
+#time thead th:first-child{
+    width: 15%;
+}
+#time thead th:last-child{
+    width: 13%;
+    font-size: 0.7rem;
+}
+#time tbody th, #time tbody td{
+    height: 3rem;
+    border-top: 1px solid var(--font_color);
+}
+#time tbody th{
+    font-size: 0.8rem;
+}
+#time p{
+    margin: 0.5rem 2rem;
+    text-align: right;
+}
+
+/* お知らせ =======================*/
+#news ul{
+    width: 90%;
+    margin: 0.5rem auto;
+    padding: 0.3rem;
+    background-color: #FFF;
+}
+#news li{
+    display: flex;
+    margin: 0.5rem;
+    border-bottom: 1px dotted var(--font_color);
+}
+#news li p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+#news li p:first-child{
+    width: 25%;
+    text-align: center;
+}
+
+/* 院長メッセージ =======================*/
+#message{
+    padding: 0;
+    margin-top: 1.5rem;
+}
+.background1{
+    background-color: var(--main_color);
+    margin-left: 5%;
+    border-radius: 80px 0 0 80px / 80px 0 0 80px;
+}
+.img_box{
+    text-align: right;
+    margin: 1rem 0;
+}
+.img_box img{
+    width: 85%;
+    background-size:cover;
+}
+.box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-right: 1rem;
+}
+.box h4{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+.box p, .right{
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
+.right{
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+.msg_text{
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 2rem;
+    text-indent: 1em;
+    line-height: 1.3em;
+}
+.msg_text:nth-child(2){
+    font-size: 0.9rem;
+    padding-bottom: 4rem;
+}
+
+/* 診察内容 =======================*/
+#examine ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 0.5rem;
+    width: 80%;
+    margin: 1rem auto;
+}
+#examine li{
+    background-color: #FFF;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    font-size: 1.7rem;
+}
+#examine li::before{
+    content: "";
+    display: block;
+    padding-top: 90%;
+}
+#examine li:first-child{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#examine li:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#examine li:nth-child(3){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#examine li:nth-child(4){
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#examine li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+#examine li span{
+    height: 100%;
+    padding-top: 25%;
+}
+a .nomal{
+    display: inline-block;
+}
+a .hover{
+    display: none;
+    font-size: 4rem;
+    color: var(--main_color);
+}
+a:hover .nomal{
+    display: none;
+}
+a:hover .hover{
+    display: inline-block;
+}
+
+/* 設備 =======================*/
+#facility{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+#facility .index{
+    padding-top: 2rem;
+}
+.background2{
+    background-image: radial-gradient(circle, 
+        var(--main_color) calc(175% / 2 - 1px), 
+        transparent calc(175% / 2));
+    overflow: hidden;
+}
+#facility p{
+    width: 80%;
+    margin: 1rem auto 0.5rem auto;
+    line-height: 1.2rem;
+}
+.img_box2, .img_box3{
+    margin: 1rem 0 2rem 0;
+}
+.img_box2{
+    text-align: left;
+}
+.img_box3{
+    text-align: right;
+    padding-bottom: 5rem;
+}
+.img_box2 img, .img_box3 img{
+    width: 85%;
+    background-size:cover;
+}
+
+/* アクセス =======================*/
+#access .index{
+    padding-top: 0;
+}
+.img_box4{
+    text-align: center;
+}
+.img_box4 img{
+    width: 80%;
+    background-size:cover;
+}
+h5{
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem 0;
+    text-align: center;
+}
+#access p{
+    line-height: 1.3rem;
+    text-align: center;
+    margin: 0.3rem;
+}
+
+/*==================================
+		サイド
+==================================*/
+aside{
+    padding: 0.5rem;
+}
+.banner{
+    margin: 0.5rem auto 2rem auto;
+    background-color: #FFF;
+    border: 10px solid var(--main_color);
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    padding: 1rem;
+}
+.img_box5{
+    text-align: center;
+    margin-top: 1rem;
+}
+.img_box5 img{
+    width: 100%;
+    background-size:cover;
+}
+
+/*==================================
+		フッター
+==================================*/
+footer{
+    overflow: hidden;
+}
+.background3{
+    background-color: var(--main_color);
+    color: #FFF;
+    padding: 2rem 0.5rem 3rem 0.5rem;
+    transform: skew(0deg, 5deg);
+    margin-bottom: -30px;
+    margin-top: 2rem;
+}
+.background3_inner{
+    transform: skew(0deg, -5deg);
+}
+footer h4, footer ul, footer .container{
+    margin: 0 auto;
+    width: 80%;
+}
+footer h4{
+    width: 60%;
+    font-size: 0.9rem;
+}
+footer ul{
+    width: 60%;
+    margin-top: 0.3rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+footer li{
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+    list-style-type: disc;
+	list-style-position:inside;
+}
+footer li:hover{
+    color: var(--font_color);
+}
+.container .icon{
+    width: 100%;
+    margin: 1.5rem;
+    justify-content: center;
+}
+.large{
+    font-size: 1.4rem;
+    padding-right: 2.2rem;
+}
+footer h5{
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+}
+footer p{
+    text-align: center;
+    font-size: 0.7rem;
+}
+.copyright{
+    margin-top: 2rem;
+}
+
+
+/*==================================
+		予約ページ
+==================================*/
+#reserve form{
+    padding: 0 2rem;
+}
+#reserve form p{
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    vertical-align: middle;
+    line-height: 1.2rem;
+}
+.required_lavel, .form_title{
+    line-height: 1.5rem;
+}
+.required_lavel{
+    font-size: 0.6rem;
+    background-color: #5bc8ac;
+    border-radius: 3px;
+    padding: 0.15rem 0.3rem;
+    color: #FFF;
+    margin-right: 0.2rem;
+    vertical-align: bottom;
+}
+.form_title{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+input, select{
+    background-color: #FFF;
+    border: #ddd solid 1px;
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem 0;
+}
+input[type="text"]{
+    width: 100%;
+}
+select{
+    appearance: auto;
+    -webkit-appearance: auto;
+}
+.radio_box{
+    display: inline-block;
+}
+.btn_box{
+    text-align: center;
+}
+.btn_box input{
+    border: 0;
+    background-color: var(--main_color);
+    color: #FFF;
+    margin: 0 0.3rem;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    text-align: center;
+}
+.btn_box input:hover{
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+}
+#reserve_finish p{
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+}
+
+/*==================================
+		予約確認ページ
+==================================*/
+#reserve_check table{
+    width: 80%;
+    margin: 0 auto 1rem auto;
+}
+#reserve_check tbody tr{
+    border: var(--base_color) 5px solid;
+}
+#reserve_check th, #reserve_check td{
+    border: var(--base_color) 3px solid;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: normal;
+}
+#reserve_check tbody th{
+    width: 40%;
+    background-color: var(--main_color);
+    color: #FFF;
+}
+#reserve_check tbody td{
+    background-color: #FFF;
+}
